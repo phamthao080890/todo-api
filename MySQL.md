@@ -1,0 +1,54 @@
+# This MySQL information for testing only - created from https://aiven.io
+
+https://console.aiven.io/account/a5af5b04e02a/project/phamthao080890-todo-database/services/mysql-todo-list-db/overview
+
+
+Service Uri:
+mysql://avnadmin:AVNS_7JaUHSDPoVxdzDm4elh@mysql-todo-list-db-phamthao080890-todo-database.l.aivencloud.com:15950/defaultdb?ssl-mode=REQUIRED
+
+Database name:
+defaultdb
+
+Host:
+mysql-todo-list-db-phamthao080890-todo-database.l.aivencloud.com
+
+Port:
+15950
+
+User:
+avnadmin
+
+Password:
+AVNS_7JaUHSDPoVxdzDm4elh
+
+SSL mode:
+REQUIRED
+
+CA Certificate:
+-----BEGIN CERTIFICATE-----
+MIIERDCCAqygAwIBAgIUXUknRfDXb49vS0oFtwFji8k41NowDQYJKoZIhvcNAQEM
+BQAwOjE4MDYGA1UEAwwvZmQyOTIyM2YtODZhYy00NjNjLWFkN2QtYmM4Mjc3Y2Ri
+MmZiIFByb2plY3QgQ0EwHhcNMjYwNTAyMTYxNjE3WhcNMzYwNDI5MTYxNjE3WjA6
+MTgwNgYDVQQDDC9mZDI5MjIzZi04NmFjLTQ2M2MtYWQ3ZC1iYzgyNzdjZGIyZmIg
+UHJvamVjdCBDQTCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAKm6Ibn7
+p6ZZM1f/lPjQu1jozhgaP16Zt1h0B2bNB4uUGyAqNq5kz+0/ZbnboaLBPYoRYrqr
+f9LRvgIrJT7YQRk8/ySY990+YYwhKliLx/RJOTFmp/TBlq8ESKGm6+uhl5YbO94P
+napJalSP55KS3PizHDGDqVjNxG9RDceSsAOBrBHAJaGJ8tnlaAnuQZM7Kg9ANdfB
+CJpzQp1cOd0qQiwrA7h5JGfBldba1MYLte//sAT0KEwaaDbdC0ye4XXBjF/WiMtr
+/teBHn9Ic7/RExC53UKWcqigRKADDN/Peztl5+ffLQVPtKNzP79atnuNQNkVX/xH
+Q574ar4Bc5W4rXjX8vBLHidSykaa++bHHRj6/abLgJMg/IA838A4T3oZ2axtOjXg
+7MrPGuJ1P0uXpf7m3J91a4JYa7ZpQpEIrabeMJu0Ip/zBrl2kE2ATpPRl3rkioTz
+e6cpMjw3lOdfQxUQvVbtXVPHeKmup1E7tT7urFX0vpfaaaVA8QnoG4bbewIDAQAB
+o0IwQDAdBgNVHQ4EFgQU/NsMHldpoCCDBmkwZXWOh+tM/WYwEgYDVR0TAQH/BAgw
+BgEB/wIBADALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQEMBQADggGBADhaELKRkNSf
+FWU0K9hzc3SbmoDYMnnBv32LQ1ocJdIGiaGk7bCVtApeU4HZJwJvjkmeQnevIGJU
+4MKcJWDfqI/UODRvFm3VC4jq/vbl4athBfobau3GpvYSa2vyu+1vuqQLt1+Ff7WC
+WsohYOzW+QfzMjwE/GB4qDxLfhv7eGOudnKjcZ5BmQgD4jd8770O2VuxZECBgumT
+IHIbndjEoWQwU3mDDjGzWOCJY7RLSmtJojuZzUlxEAYT7QEr5uChteXbnsQ+RWGM
+n6btQK4YZMVE/2TTLbrHbiozYEZRmiHWq0SKhwvMB4j+6hGbnG5MeF47ZD8dHdkT
+1A4rEFo4QtZRY5YJnRGlqTmfM2kUegRlMOtISEOpHCp1XgrNBaxFSeTqYNpIr0dC
+pX+o7+khNZ2+ePhmYYh7JtiCG5LVL7kRtlXQlRdNq67lKuwM1k2uzLVyYJCMAFlL
+tPCy/UfIWUGh9u2X5QOWb2Fi9Guy/STDH8nmboWG3ozjH/DtvJ0GUw==
+-----END CERTIFICATE-----
+
+

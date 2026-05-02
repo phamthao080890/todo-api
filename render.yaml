@@ -1,0 +1,68 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+#
+# Usage:
+#   1. Push this file to your GitHub/GitLab repository.
+#   2. Go to https://dashboard.render.com → New → Blueprint.
+#   3. Connect your repo — Render will import this file automatically.
+#   4. Fill in the env vars marked `sync: false` in the Render dashboard.
+#
+# Database:
+#   This app uses Aiven MySQL (free tier available).
+#   Set DB_* environment variables to connect to your Aiven database.
+
+services:
+  - type: web
+    name: todo-api
+    env: node
+    plan: free
+    buildCommand: npm ci
+    # Note: Migrations run automatically on server startup (no pre-deploy needed)
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      # ── JWT ─────────────────────────────────────────────────────────────────
+      - key: JWT_SECRET
+        generateValue: true   # Render generates a secure random value automatically
+      - key: JWT_EXPIRES_IN
+        value: 1h
+
+      # ── Database (set these in the Render dashboard — never commit secrets) ─
+      # For Aiven MySQL, use these values:
+      # DB_HOST: mysql-todo-list-db-phamthao080890-todo-database.l.aivencloud.com
+      # DB_PORT: 15950
+      # DB_NAME: defaultdb
+      # DB_USER: avnadmin
+      # DB_PASSWORD: <paste password from MySQL.md>
+      # DB_CA_CERT: <paste entire CA certificate from MySQL.md, including -----BEGIN/END----->
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false       # Use 15950 for Aiven, 3306 for local
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_SSL
+        value: "true"    # external managed databases require SSL
+      - key: DB_CA_CERT
+        sync: false      # paste entire CA certificate (Aiven only)
+
+      # ── CORS ─────────────────────────────────────────────────────────────────
+      # Set to your frontend's domain, e.g. https://app.example.com
+      - key: CORS_ORIGIN
+        sync: false
+
+      # ── Rate limiting (auth endpoints) ────────────────────────────────────────
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "900000"   # 15 minutes
+      - key: RATE_LIMIT_MAX
+        value: "20"       # max requests per window per IP
+
+      # ── Setup (one-time migration for free tier) ─────────────────────────────
+      - key: SETUP_TOKEN
+        generateValue: true   # Render generates a secure random token automatically
